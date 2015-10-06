@@ -1,0 +1,33 @@
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    color: #5a5a5a;
+    font-size: 24px;
+}
+
+.jumbotron {
+    background-image: url(http://www.aimm.edu/images/Drums/slide1.jpg);
+    height: 500px;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    font-size: 48px;  
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    left:0px;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.jumbotron-container {
+    position: relative;
+    top: 100px;
+}
