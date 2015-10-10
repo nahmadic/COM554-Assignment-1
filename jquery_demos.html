@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>JQuery Demo Page</title>
 <link rel="stylesheet" type="text/css" href="main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
     
+    //start of animation code
+    $("#top-right").click(function(){ 
+        $("#top-right").animate({height: '98%', width: '98%',}, function(){$("#test-content").show();});
+});
+    
+    $("#top-right").dblclick(function(){
+        $("#test-content").hide(function(){$("#top-right").animate({
+            height: '8vh',
+            width: '16vw',
+        });});
+   }); //For whatever reason this still doesn't work, text comes back when animation is over
+    
+    $("#top-left").click(function(){
+        $("#top-left").animate({
+            height: '98%',
+            width: '98%',
+        });
+    });
+    
+      $("#top-left").dblclick(function(){
+        $("#top-left").animate({
+            height: '8vh',
+            width: '16vw',
+        });
+    });
+    
+    $("#bottom-right").click(function(){
+        $("#bottom-right").animate({
+            height: '98%',
+            width: '98%',
+        });
+    });
+    
+      $("#bottom-right").dblclick(function(){
+        $("#bottom-right").animate({
+            height: '8vh',
+            width: '16vw',
+        });
+    });
+    
+    $("#bottom-left").click(function(){
+        $("#bottom-left").animate({
+            height: '98%',
+            width: '98%',
+        });
+    });
+    
+      $("#bottom-left").dblclick(function(){
+        $("#bottom-left").animate({
+            height: '8vh',
+            width: '16vw',
+        });
+    }); //End of animation code
+});
+</script>
+</head>    
 <body id="main-page">
     
-<div class="outer-container">
-<div class="top-left-outer" "outer"></div>
-<div class="top-right-outer" "outer"></div>
-<div class="bottom-left-outer" "outer"></div>
-<div class="bottom-right-outer" "outer"></div>
-    <div class="inner-container"> 
-        <div class="top-left-inner" "inner"></div>
-        <div class="top-right-inner" "inner"></div>
-        <div class="bottom-left-inner" "inner"></div>
-        <div class="bottom-right-inner" "inner"></div>
-        <div class="title-block">
-            Title text goes here
+    <div class="outer-box">
+        <div class="inner-box" id="top-left">
+            <h1>Equipment</h1>
+            
         </div>
     </div>
-
-</div>
-    
+    <div class="outer-box">
+    <div class="inner-box" id="top-right">
+            <h1>Drummers</h1>
+        <div id="test-content">
+                Here is some fucking content
+            </div>
+        </div>
+    </div>
+    <div class="outer-box">
+    <div class="inner-box" id="bottom-left">
+        <span><h1>Learning to Play</h1></span>
+        </div>
+    </div>
+    <div class="outer-box">
+    <div class="inner-box" id="bottom-right">
+        <span><h1>FAQ</h1></span>
+        </div>
+    </div>
+    <div class="title-block">
+        <h1>COM554 Drum JQuery Site</h1>
+            <h1>B00694919 - Ryan Browne</h1></div>
+    </div>
 </body>
 </html>
