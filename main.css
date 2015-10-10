@@ -2,6 +2,9 @@ body {
     margin:0;     /* This is used to reset any browser-default margins */
     height:100vh; /* This is needed to overcome a Chrome bug. */
     width:100vw;  /* As above. */
+    background-image: url("http://pearldrum.com/common/assets/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .title-block {
@@ -12,8 +15,8 @@ body {
     height: 10vh;
     margin-top: -5vh;
     margin-left: -10vw;
-    border: 3px solid white;
-    border-radius: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
     background-color: black;
     color: white;
     text-align: center;
@@ -32,9 +35,10 @@ body {
     width: 16vw;
     height: 8vh;
     background-color: #333333;
+    opacity: 0.8;
     color: white;
-    border: 3px solid white;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 #bottom-left span {
