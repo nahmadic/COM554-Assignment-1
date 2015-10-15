@@ -11,10 +11,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 20vw;
+    width: 18vw;
     height: 10vh;
     margin-top: -5vh;
-    margin-left: -10vw;
+    margin-left: -9vw;
     border: 1px solid white;
     border-radius: 5px;
     background-color: black;
@@ -27,13 +27,12 @@ body {
     box-sizing: border-box;
     width: 50%;
     height: 50%;
-    //border: 1px solid black;
     float: left;
 }
 
 .inner-box {
-    width: 16vw;
-    height: 8vh;
+    width: 250px;
+    height: 85px;
     background-color: #333333;
     opacity: 0.8;
     color: white;
@@ -41,54 +40,135 @@ body {
     border-radius: 5px;
 }
 
-#bottom-left span {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-#bottom-right span{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
 #top-left {
-    text-align: left;
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+#top-left-content {
+    display: none;
+    padding: 5px;
+    overflow: auto;
+}
+
+#top-left-title {
+    height: 65px;
+    position: absolute;
+    left: 0;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.top-left-large {
+    height: 85%;
+    width: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
 }
 
 #top-right {
-    text-align: right;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
+#top-right-content {
+    display: none;
+    padding: 5px;
+    overflow: auto;
+}
+
+#top-right-title {
+    height: 65px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.top-right-large {
+    height: 85%;
+    width: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 #bottom-left {
-    text-align: left;
-    vertical-align: 100%;
     position: absolute;
     top: 0;
     right: 0;
 }
 
-#bottom-right {
-    text-align: right;
-    vertical-align: text-bottom;
+#bottom-left-content {
     position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    overflow: auto;
+    width: 98%;
+    padding: 5px;
+}
+
+#bottom-left-title {
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.bottom-left-large {
+    height: 85%;
+    width: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#bottom-right {
+   position: absolute;
     top: 0;
     left: 0;
 }
 
-#test-content {
+#bottom-right-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     display: none;
-    color: white;
+    overflow: auto;
+    width: 98%;
+    padding: 5px;
 }
-    
 
+#bottom-right-title {
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.bottom-right-large {
+    height: 85%;
+    width: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.top-titles {
+    bottom: 0;
+}
+
+.bottom-titles {
+    top: 0;
+}
 
 h1 {
     font-family: "Verdana";
