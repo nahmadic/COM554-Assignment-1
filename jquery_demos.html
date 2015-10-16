@@ -10,8 +10,8 @@ $(document).ready(function(){
     $("#top-right-title").click(function(){
         if ($("#top-right").height() == 85){
             $("#top-right").animate({height: '98%', width: '98%'}, function(){$("#top-right-content").show()});
-            $("#top-right-title").css({"font-size": "2em", "padding-right": "10px"}).addClass("top-titles");
             $("#top-right-content").addClass("top-right-large");
+            $("#top-right-title").css({"font-size": "2em", "padding-right": "10px"});
         } else {
             $("#top-right").animate({height: '85px', width: '250px'});
             $("#top-right-content").removeClass("top-right-large").hide();
