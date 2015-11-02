@@ -1,141 +1,126 @@
 body {
-    margin:0;     /* This is used to reset any browser-default margins */
-    height:100vh; /* This is needed to overcome a Chrome bug. */
-    width:100vw;  /* As above. */
-    background-image: url("http://pearldrum.com/common/assets/images/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+  margin: 0;
+  /* This is used to reset any browser-default margins */
+  height: 100vh;
+  /* This is needed to overcome a Chrome bug. */
+  width: 100vw;
+  /* As above. */
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 .title-block {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 18vw;
-    height: 10vh;
-    margin-top: -5vh;
-    margin-left: -9vw;
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 18vw;
+  height: 10vh;
+  margin-top: -5vh;
+  margin-left: -9vw;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
-
 .outer-box {
-    position: relative;
-    box-sizing: border-box;
-    width: 50%;
-    height: 50%;
-    float: left;
+  position: relative;
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  float: left;
 }
-
 .inner-box {
-    display:flex;
-    flex-direction: column;
-    width: 250px;
-    height: 85px;
-    background-color: #333333;
-    opacity: 0.8;
-    color: white;
-    border: 2px solid black;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 85px;
+  background-color: #333333;
+  opacity: 0.8;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
 }
-
 #top-left-container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-
 #top-left-content {
-    order: -1;
-    display: none;
-    padding: 5px;
-    overflow: hidden;
-}
-
-#top-left {
-    height:8%;
-    width: auto;
-    text-align: left;
-    padding: 5px;
-}
-
-.top-left-large {
-    height: 85%;
-    width: auto;
-    margin: 5px;
-}
-
-#top-right-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-#top-right-content {
-    order: -1;
-    display: none;
-    padding: 5px;
-    overflow: auto;
-}
-
-#top-right {
-    height: 8%;
-    width: auto;
-    text-align: right;
-    padding: 5px;
-}
-
-.top-right-large {
-    height: 85%;
-    width: auto;
-    border: 1px solid gray;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-#bottom-left-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#bottom-left-content {
-    display: none;
-    overflow: auto;
-    padding: 5px;
-}
-
-#bottom-left {
   order: -1;
-  height:8%;
+  display: none;
+  padding: 5px;
+  overflow: hidden;
+}
+#top-left {
+  height: 8%;
   width: auto;
   text-align: left;
   padding: 5px;
 }
-
+.top-left-large {
+  height: 85%;
+  width: auto;
+  margin: 5px;
+}
+#top-right-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#top-right-content {
+  order: -1;
+  display: none;
+  padding: 5px;
+  overflow: auto;
+}
+#top-right {
+  height: 8%;
+  width: auto;
+  text-align: right;
+  padding: 5px;
+}
+.top-right-large {
+  height: 85%;
+  width: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+}
+#bottom-left-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#bottom-left-content {
+  display: none;
+  overflow: auto;
+  padding: 5px;
+}
+#bottom-left {
+  order: -1;
+  height: 8%;
+  width: auto;
+  text-align: left;
+  padding: 5px;
+}
 .bottom-left-large {
-    height: 85%;
-    width: auto;
-    border: 1px solid gray;
-    border-radius: 5px;
-    margin: 5px;
+  height: 85%;
+  width: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
 }
-
 #bottom-right-container {
-   position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
 #bottom-right-content {
-    display: none;
-    overflow:auto;
-    padding: 5px;
+  display: none;
+  overflow: auto;
+  padding: 5px;
 }
-
 #bottom-right {
   order: -1;
   height: 8%;
@@ -143,36 +128,34 @@ body {
   text-align: right;
   padding: 5px;
 }
-
 .bottom-right-large {
-    height: 85%;
-    width: auto;
-    margin: 5px;
+  height: 85%;
+  width: auto;
+  margin: 5px;
 }
-
 h1 {
-    font-family: "Verdana";
-    font-size: 1em;
-    margin: 0; /*Fixes annoying chrome thing where it puts a margin above and bellow tags*/
-    padding: 0;/*Same as above*/
+  font-family: "Verdana";
+  font-size: 1em;
+  margin: 0;
+  /*Fixes annoying chrome thing where it puts a margin above and bellow tags*/
+  padding: 0;
+  /*Same as above*/
 }
-
 .tabs-menu {
   width: 100%;
   height: 30px;
   float: left;
   clear: both;
-  padding-left: 0; /*resolves chrome issue with ul start padding of 40px*/
+  padding-left: 0;
+  /*resolves chrome issue with ul start padding of 40px*/
   margin: 0;
 }
-
 .tabs-menu li {
-  width:24.5%;
+  width: 24.5%;
   height: 30px;
   line-height: 30px;
   float: left;
-  margin-right: 10px
-  background-color: #ccc;
+  margin-right: 10px background-color: #ccc;
   border-top: 1px solid #d4d4d1;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -181,103 +164,124 @@ h1 {
   list-style: none;
   text-align: center;
 }
-
 .tabs-menu li.active-tab {
-    position: relative;
-    background-color: black;
-    z-index: 5;
+  position: relative;
+  background-color: black;
+  z-index: 5;
 }
-
 .tabs-menu li a {
-    padding: 10px;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
 }
-
 .tab {
-    border: 1px solid #d4d4d1;
-    background-color: black;
-    float: left;
-    margin-bottom: 20px;
-    width: 99%;
-    height: 92%;
+  border: 1px solid #d4d4d1;
+  background-color: black;
+  float: left;
+  margin-bottom: 20px;
+  width: 99%;
+  height: 92%;
 }
-
 .tab-content {
-    width: 90%;
-    height: 99%;
-    overflow: auto;
-    display: none;
-    padding: 5px;
+  width: 90%;
+  height: 99%;
+  overflow: auto;
+  display: none;
+  padding: 5px;
 }
-
 .accordion {
   width: 100%;
   height: 98%;
 }
-
 .accordion-title {
   background-color: black;
+  border: 1px solid white;
   width: 99%;
   height: 25px;
   padding: 2px;
 }
-
 .accordion-content {
   width: 98%;
   display: none;
 }
-
 .myMenu {
-	margin:0;
-	padding:0;
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   padding-left: 2px;
 }
-
 .myMenu li {
-	list-style:none;
-	float:left;
-	font:12px Arial, Helvetica, sans-serif #111;
-
+  list-style: none;
+  float: left;
+  font: 12px Arial, Helvetica, sans-serif #111;
 }
-
 .myMenu li a:link, .myMenu li a:visited {
-	display:block;
-	text-decoration:none;
-	background-color: black;
-	padding: 0.5em 2em;
-	margin:0;
-	color: white;
+  display: block;
+  text-decoration: none;
+  background-color: black;
+  padding: 0.5em 2em;
+  margin: 0;
+  color: white;
   width: auto;
-
 }
-
 .myMenu li a:hover {
-	background-color:white;
+  background-color: white;
   color: black;
 }
-
-/*style the sub menu*/
 .myMenu li ul {
-	position:absolute;
-	visibility:hidden;
-	margin:0;
-	padding:0;
+  position: absolute;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
 }
-
 .myMenu li ul li {
-	display:inline;
-	float:none;
+  display: inline;
+  float: none;
 }
-
 .myMenu li ul li a:link, .myMenu li ul li a:visited {
-	background-color:black;
-	width:auto;
+  background-color: black;
+  width: auto;
+}
+.myMenu li ul li a:hover {
+  background-color: white;
+  color: black;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  border: 1px solid #333;
+  background-color: #161616;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
 }
 
-.myMenu li ul li a:hover {
-	background-color:white;
-  color: black;
+#popup {
+  display: none;
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  z-index: 999999;
+  position:absolute;
+  top: 25%;
+  left: 25%;
+}
+
+#close-popup {
+  width: 15px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
 }
