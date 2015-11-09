@@ -256,7 +256,6 @@ h1 {
   padding: 10px;
   color: #fff;
 }
-
 #popup {
   display: none;
   width: 50%;
@@ -268,11 +267,10 @@ h1 {
   border-radius: 5px;
   color: white;
   z-index: 999999;
-  position:absolute;
+  position: absolute;
   top: 25%;
   left: 25%;
 }
-
 #close-popup {
   width: 15px;
   height: auto;
